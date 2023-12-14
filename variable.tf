@@ -53,6 +53,18 @@ variable "volume_size" {
   default     = 100
 }
 
+variable "ebs_volume_type" {
+  type        = string
+  description = "Volume type for EC2 instance default latest type"
+  default     = "gp3"
+}
+
+variable "ebs_volume_size" {
+  type        = number
+  description = "Volume size of the EC2 instance"
+  default     = 100
+}
+
 variable "volume_encrypted" {
   type        = bool
   description = "Volume can be encrypted through this check"
